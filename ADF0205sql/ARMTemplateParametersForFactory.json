@@ -26,6 +26,12 @@
 		"SqlDbTripData_password": {
 			"value": ""
 		},
+		"AzureDataLakeStorage1_accountKey": {
+			"value": ""
+		},
+		"MoviesDbDLS_accountKey": {
+			"value": ""
+		},
 		"AdventureWorksDb_properties_typeProperties_server": {
 			"value": "serveradfatishay.database.windows.net"
 		},
@@ -64,6 +70,12 @@
 		},
 		"SqlDbTripData_properties_typeProperties_userName": {
 			"value": "AtishayJain"
+		},
+		"AzureDataLakeStorage1_properties_typeProperties_url": {
+			"value": "https://sa0205adls.dfs.core.windows.net/"
+		},
+		"MoviesDbDLS_properties_typeProperties_url": {
+			"value": "https://sa0205adls.dfs.core.windows.net/"
 		}
 	}
 }
