@@ -11,9 +11,17 @@
 			"type": "secureString",
 			"metadata": "Secure string for 'password' of 'AdventureWorksDb'"
 		},
+		"AzureBlobStorage1_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'AzureBlobStorage1'"
+		},
 		"AzureSqlDatabase1_password": {
 			"type": "secureString",
 			"metadata": "Secure string for 'password' of 'AzureSqlDatabase1'"
+		},
+		"BlobTripDataFare_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'BlobTripDataFare'"
 		},
 		"DLSTripData_accountKey": {
 			"type": "secureString",
@@ -109,8 +117,14 @@
 					"AdventureWorksDb_password": {
 						"value": "[parameters('AdventureWorksDb_password')]"
 					},
+					"AzureBlobStorage1_connectionString": {
+						"value": "[parameters('AzureBlobStorage1_connectionString')]"
+					},
 					"AzureSqlDatabase1_password": {
 						"value": "[parameters('AzureSqlDatabase1_password')]"
+					},
+					"BlobTripDataFare_connectionString": {
+						"value": "[parameters('BlobTripDataFare_connectionString')]"
 					},
 					"DLSTripData_accountKey": {
 						"value": "[parameters('DLSTripData_accountKey')]"
