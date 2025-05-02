@@ -1,0 +1,19 @@
+{
+	"name": "pipeline28-04",
+	"properties": {
+		"activities": [
+			{
+				"name": "Demo wait",
+				"type": "Wait",
+				"dependsOn": [],
+				"userProperties": [],
+				"typeProperties": {
+					"waitTimeInSeconds": 1
+				}
+			}
+		],
+		"annotations": [],
+		"lastPublishTime": "2025-05-02T05:16:22Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}

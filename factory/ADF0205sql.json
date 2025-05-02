@@ -1,0 +1,9 @@
+{
+	"name": "ADF0205sql",
+	"location": "eastus2",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "7ce13bfb-960f-4933-a942-963add067fe0",
+		"tenantId": "7c2c734c-c7d5-4011-aa42-2e92378d364c"
+	}
+}
