@@ -15,6 +15,10 @@
 			"type": "secureString",
 			"metadata": "Secure string for 'connectionString' of 'AzureBlobStorage1'"
 		},
+		"AzureDataLakeStorage1_accountKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accountKey' of 'AzureDataLakeStorage1'"
+		},
 		"AzureSqlDatabase1_password": {
 			"type": "secureString",
 			"metadata": "Secure string for 'password' of 'AzureSqlDatabase1'"
@@ -27,6 +31,14 @@
 			"type": "secureString",
 			"metadata": "Secure string for 'accountKey' of 'DLSTripData'"
 		},
+		"FlipkartBlob_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'FlipkartBlob'"
+		},
+		"MoviesDbDLS_accountKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accountKey' of 'MoviesDbDLS'"
+		},
 		"SqlDb_password": {
 			"type": "secureString",
 			"metadata": "Secure string for 'password' of 'SqlDb'"
@@ -34,14 +46,6 @@
 		"SqlDbTripData_password": {
 			"type": "secureString",
 			"metadata": "Secure string for 'password' of 'SqlDbTripData'"
-		},
-		"AzureDataLakeStorage1_accountKey": {
-			"type": "secureString",
-			"metadata": "Secure string for 'accountKey' of 'AzureDataLakeStorage1'"
-		},
-		"MoviesDbDLS_accountKey": {
-			"type": "secureString",
-			"metadata": "Secure string for 'accountKey' of 'MoviesDbDLS'"
 		},
 		"AdventureWorksDb_properties_typeProperties_server": {
 			"type": "string",
@@ -54,6 +58,10 @@
 		"AdventureWorksDb_properties_typeProperties_userName": {
 			"type": "string",
 			"defaultValue": "AtishayJain"
+		},
+		"AzureDataLakeStorage1_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://sa0205adls.dfs.core.windows.net/"
 		},
 		"AzureSqlDatabase1_properties_typeProperties_server": {
 			"type": "string",
@@ -68,6 +76,10 @@
 			"defaultValue": "AtishayJain"
 		},
 		"DLSTripData_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://sa0205adls.dfs.core.windows.net/"
+		},
+		"MoviesDbDLS_properties_typeProperties_url": {
 			"type": "string",
 			"defaultValue": "https://sa0205adls.dfs.core.windows.net/"
 		},
@@ -94,14 +106,6 @@
 		"SqlDbTripData_properties_typeProperties_userName": {
 			"type": "string",
 			"defaultValue": "AtishayJain"
-		},
-		"AzureDataLakeStorage1_properties_typeProperties_url": {
-			"type": "string",
-			"defaultValue": "https://sa0205adls.dfs.core.windows.net/"
-		},
-		"MoviesDbDLS_properties_typeProperties_url": {
-			"type": "string",
-			"defaultValue": "https://sa0205adls.dfs.core.windows.net/"
 		},
 		"containerUri": {
 			"type": "string",
@@ -136,6 +140,9 @@
 					"AzureBlobStorage1_connectionString": {
 						"value": "[parameters('AzureBlobStorage1_connectionString')]"
 					},
+					"AzureDataLakeStorage1_accountKey": {
+						"value": "[parameters('AzureDataLakeStorage1_accountKey')]"
+					},
 					"AzureSqlDatabase1_password": {
 						"value": "[parameters('AzureSqlDatabase1_password')]"
 					},
@@ -145,17 +152,17 @@
 					"DLSTripData_accountKey": {
 						"value": "[parameters('DLSTripData_accountKey')]"
 					},
+					"FlipkartBlob_connectionString": {
+						"value": "[parameters('FlipkartBlob_connectionString')]"
+					},
+					"MoviesDbDLS_accountKey": {
+						"value": "[parameters('MoviesDbDLS_accountKey')]"
+					},
 					"SqlDb_password": {
 						"value": "[parameters('SqlDb_password')]"
 					},
 					"SqlDbTripData_password": {
 						"value": "[parameters('SqlDbTripData_password')]"
-					},
-					"AzureDataLakeStorage1_accountKey": {
-						"value": "[parameters('AzureDataLakeStorage1_accountKey')]"
-					},
-					"MoviesDbDLS_accountKey": {
-						"value": "[parameters('MoviesDbDLS_accountKey')]"
 					},
 					"AdventureWorksDb_properties_typeProperties_server": {
 						"value": "[parameters('AdventureWorksDb_properties_typeProperties_server')]"
@@ -165,6 +172,9 @@
 					},
 					"AdventureWorksDb_properties_typeProperties_userName": {
 						"value": "[parameters('AdventureWorksDb_properties_typeProperties_userName')]"
+					},
+					"AzureDataLakeStorage1_properties_typeProperties_url": {
+						"value": "[parameters('AzureDataLakeStorage1_properties_typeProperties_url')]"
 					},
 					"AzureSqlDatabase1_properties_typeProperties_server": {
 						"value": "[parameters('AzureSqlDatabase1_properties_typeProperties_server')]"
@@ -177,6 +187,9 @@
 					},
 					"DLSTripData_properties_typeProperties_url": {
 						"value": "[parameters('DLSTripData_properties_typeProperties_url')]"
+					},
+					"MoviesDbDLS_properties_typeProperties_url": {
+						"value": "[parameters('MoviesDbDLS_properties_typeProperties_url')]"
 					},
 					"SqlDb_properties_typeProperties_server": {
 						"value": "[parameters('SqlDb_properties_typeProperties_server')]"
@@ -195,12 +208,6 @@
 					},
 					"SqlDbTripData_properties_typeProperties_userName": {
 						"value": "[parameters('SqlDbTripData_properties_typeProperties_userName')]"
-					},
-					"AzureDataLakeStorage1_properties_typeProperties_url": {
-						"value": "[parameters('AzureDataLakeStorage1_properties_typeProperties_url')]"
-					},
-					"MoviesDbDLS_properties_typeProperties_url": {
-						"value": "[parameters('MoviesDbDLS_properties_typeProperties_url')]"
 					}
 				}
 			},
