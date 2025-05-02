@@ -1,0 +1,37 @@
+{
+	"name": "MoviesFlow1",
+	"properties": {
+		"type": "MappingDataFlow",
+		"typeProperties": {
+			"sources": [
+				{
+					"dataset": {
+						"referenceName": "MoviesDbDataset",
+						"type": "DatasetReference"
+					},
+					"name": "MoviesDb"
+				}
+			],
+			"sinks": [],
+			"transformations": [
+				{
+					"name": "FilterYears"
+				}
+			],
+			"scriptLines": [
+				"source(output(",
+				"          movie as string,",
+				"          title as string,",
+				"          genres as string,",
+				"          year as string,",
+				"          Rating as string,",
+				"          {Rotton Tomato} as string",
+				"     ),",
+				"     allowSchemaDrift: true,",
+				"     validateSchema: false,",
+				"     ignoreNoFilesFound: false) ~> MoviesDb",
+				"MoviesDb filter(toInteger(year) >= 1910 && toInteger(year) <= 2000 && rlike(genres, 'Comedy')) ~> FilterYears"
+			]
+		}
+	}
+}
