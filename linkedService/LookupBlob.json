@@ -1,0 +1,12 @@
+{
+	"name": "LookupBlob",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "AzureBlobStorage",
+		"typeProperties": {
+			"connectionString": "DefaultEndpointsProtocol=https;AccountName=saatti;EndpointSuffix=core.windows.net;",
+			"encryptedCredential": "ew0KICAiVmVyc2lvbiI6ICIyMDE3LTExLTMwIiwNCiAgIlByb3RlY3Rpb25Nb2RlIjogIktleSIsDQogICJTZWNyZXRDb250ZW50VHlwZSI6ICJQbGFpbnRleHQiLA0KICAiQ3JlZGVudGlhbElkIjogIkRBVEFGQUNUT1JZQDVCNzIwOEMxLUM0MTItNDU0Qy1BNDAxLUY5NzYwNDIxRjA4Ml9jN2ViYWU2Ny1jMTUxLTQ0MmQtYmVmMS01ODFmMjJiMDY3NGIiDQp9"
+		}
+	}
+}
