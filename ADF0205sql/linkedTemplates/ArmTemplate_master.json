@@ -7,6 +7,10 @@
 			"metadata": "Data Factory name",
 			"defaultValue": "ADF0205sql"
 		},
+		"AdvWorksDb_password": {
+			"type": "secureString",
+			"metadata": "Secure string for 'password' of 'AdvWorksDb'"
+		},
 		"AdventureWorksDb_password": {
 			"type": "secureString",
 			"metadata": "Secure string for 'password' of 'AdventureWorksDb'"
@@ -35,6 +39,10 @@
 			"type": "secureString",
 			"metadata": "Secure string for 'connectionString' of 'FlipkartBlob'"
 		},
+		"LookupBlob_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'LookupBlob'"
+		},
 		"MoviesDbDLS_accountKey": {
 			"type": "secureString",
 			"metadata": "Secure string for 'accountKey' of 'MoviesDbDLS'"
@@ -46,6 +54,18 @@
 		"SqlDbTripData_password": {
 			"type": "secureString",
 			"metadata": "Secure string for 'password' of 'SqlDbTripData'"
+		},
+		"AdvWorksDb_properties_typeProperties_server": {
+			"type": "string",
+			"defaultValue": "serveradfatishay.database.windows.net"
+		},
+		"AdvWorksDb_properties_typeProperties_database": {
+			"type": "string",
+			"defaultValue": "db-aj-010525"
+		},
+		"AdvWorksDb_properties_typeProperties_userName": {
+			"type": "string",
+			"defaultValue": "AtishayJain"
 		},
 		"AdventureWorksDb_properties_typeProperties_server": {
 			"type": "string",
@@ -134,6 +154,9 @@
 					"factoryName": {
 						"value": "[parameters('factoryName')]"
 					},
+					"AdvWorksDb_password": {
+						"value": "[parameters('AdvWorksDb_password')]"
+					},
 					"AdventureWorksDb_password": {
 						"value": "[parameters('AdventureWorksDb_password')]"
 					},
@@ -155,6 +178,9 @@
 					"FlipkartBlob_connectionString": {
 						"value": "[parameters('FlipkartBlob_connectionString')]"
 					},
+					"LookupBlob_connectionString": {
+						"value": "[parameters('LookupBlob_connectionString')]"
+					},
 					"MoviesDbDLS_accountKey": {
 						"value": "[parameters('MoviesDbDLS_accountKey')]"
 					},
@@ -163,6 +189,15 @@
 					},
 					"SqlDbTripData_password": {
 						"value": "[parameters('SqlDbTripData_password')]"
+					},
+					"AdvWorksDb_properties_typeProperties_server": {
+						"value": "[parameters('AdvWorksDb_properties_typeProperties_server')]"
+					},
+					"AdvWorksDb_properties_typeProperties_database": {
+						"value": "[parameters('AdvWorksDb_properties_typeProperties_database')]"
+					},
+					"AdvWorksDb_properties_typeProperties_userName": {
+						"value": "[parameters('AdvWorksDb_properties_typeProperties_userName')]"
 					},
 					"AdventureWorksDb_properties_typeProperties_server": {
 						"value": "[parameters('AdventureWorksDb_properties_typeProperties_server')]"

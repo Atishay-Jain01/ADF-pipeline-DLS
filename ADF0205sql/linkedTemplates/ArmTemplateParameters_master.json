@@ -5,6 +5,9 @@
 		"factoryName": {
 			"value": "ADF0205sql"
 		},
+		"AdvWorksDb_password": {
+			"value": ""
+		},
 		"AdventureWorksDb_password": {
 			"value": ""
 		},
@@ -26,6 +29,9 @@
 		"FlipkartBlob_connectionString": {
 			"value": ""
 		},
+		"LookupBlob_connectionString": {
+			"value": ""
+		},
 		"MoviesDbDLS_accountKey": {
 			"value": ""
 		},
@@ -34,6 +40,15 @@
 		},
 		"SqlDbTripData_password": {
 			"value": ""
+		},
+		"AdvWorksDb_properties_typeProperties_server": {
+			"value": "serveradfatishay.database.windows.net"
+		},
+		"AdvWorksDb_properties_typeProperties_database": {
+			"value": "db-aj-010525"
+		},
+		"AdvWorksDb_properties_typeProperties_userName": {
+			"value": "AtishayJain"
 		},
 		"AdventureWorksDb_properties_typeProperties_server": {
 			"value": "serveradfatishay.database.windows.net"
